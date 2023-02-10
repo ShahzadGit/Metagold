@@ -97,9 +97,12 @@ html, body {
     color: var(--secondary-color);
 }
 
+.navbar .navbar-toggler{
+    background-color: var(--bg-gray);
+    opacity: 0.5;
+}
 .navbar .navbar-toggler:focus {
-    outline: unset;
-    border: unset;
+    border: 1px solid lightgray;
     box-shadow: none;
 }
 
@@ -213,5 +216,22 @@ html, body {
     .navbar .btn-main {
         padding: 0.425rem 2.275rem;
         font-size: 0.8375rem;
+      }
+      .top-banner .col1,
+      .top-banner .col2{
+          width: 65%;
+         
+      }
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar .btn-main {
+        padding: 0.325rem 1.275rem;
+        font-size: 0.6175rem;
+      }
+      .top-banner .col1,
+      .top-banner .col2{
+          width: 75%;
+         
       }
 }
