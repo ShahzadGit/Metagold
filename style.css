@@ -1,0 +1,217 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* -------------Variable Definition */
+:root {
+    --primary-color: #E0AA31;
+    --secondary-color: #5B4A2D;
+    --bg-first: #E8D378;
+    --bg-gray: #373332;
+    --white-color: white;
+    --text-gray: #ACACAC;
+    --primay-font: 'Poppins', sans-serif;
+    --secondary-font: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, p{
+    font-family: var(--primay-font);
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: var(--primay-font);
+}
+
+/* CUSTOM SCROLBAR */
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+/* navbar */
+/* #navbar{
+    background-color: transparent;
+} */
+
+/* .navbar{
+    position: fixed !important;
+} */
+
+.navgation-wrap {
+    
+   -webkit-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+
+}
+
+/* Change navbar styling on scroll */
+.navgation-wrap.scroll-on {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.6);
+    -webkit-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+
+}
+
+.navbar .btn-main {
+    padding: 0.525rem 2.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 0.9375rem;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.navbar .btn-main:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.navbar .navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+
+/* Banner */
+.top-banner {
+    background: url('./images/bg-main.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: auto;
+}
+
+.top-banner .col1,
+.top-banner .col2{
+    width: 55%;
+    background-color: var(--bg-gray) !important;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.top-banner .col1-head,
+.top-banner .col2-head{
+    background-color: var(--bg-first) !important;
+    background-image: linear-gradient(#E8D378,#E0AA31);
+    padding: 10px;
+    border-radius: 25px;
+    color: black;
+}
+
+.top-banner .col2-head{
+    padding: 40px 1px;
+}
+
+.top-banner .col1-head h1,
+.top-banner .col2-head h1{
+    font-weight: bold;
+    font-size: calc(1rem + 1.5vw);
+  
+}
+
+.top-banner .col1-head p{
+    font-size: calc(0.7rem + 0.25vw);
+}
+
+/* .top-banner .col1-body{
+    padding-top: 35px;
+    padding-left: 130px;
+    padding-bottom: 150px; 
+    background-image: url('./images/card1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+} */
+
+/* .top-banner .col1-body-g1{
+    color: var(--text-gray);
+}
+.top-banner .col1-body-g2{
+    color: var(--primary-color);
+}
+.col1-body p{
+    font-size: 1.15rem;
+    line-height: 40px;
+    word-wrap: unset;
+} */
+
+.top-banner .col1-body img
+{
+    height: 90%;
+    width: 90%;
+    float: right;
+}
+
+.top-banner .col2-body img{
+    height: 80%;
+    width: 80%;
+    /* float: right; */
+}
+.top-banner .col2-div1{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    margin: 10px 15px;
+    padding: 7px 15px;
+    border-radius: 15px;
+}
+.top-banner .col2-div2{
+    background-color: var(--bg-first) !important;
+    background-image: linear-gradient(#E8D378,#E0AA31);
+    color: var(--white-color);
+    margin: 10px 15px;
+    padding: 7px 15px;
+    border-radius: 15px;
+}
+
+.top-banner .col2-body h3{
+    font-weight: bold;
+    font-size: calc(1rem + 0.3vw);
+    color: var(--white-color);
+  
+}
+
+/* Media Queries */
+@media only screen and (max-width: 987px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .btn-main {
+        padding: 0.425rem 2.275rem;
+        font-size: 0.8375rem;
+      }
+}
